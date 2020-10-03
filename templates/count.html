@@ -1,0 +1,18 @@
+<h1>count</h1>
+<a href="{% url 'hello' %}"> back to homepage </a>
+<h2> Your Text </h2>
+{{ fulltextarea }}
+<br>
+<h2> Words Count</h2>
+total words= {{ words }}
+<br>
+<br>
+{% for word ,value in word_dictionary %}
+{{word}}={{value}}
+<br>
+
+{% endfor %}
+<form action="{% url 'about' %}">
+    <input type="submit" value="About us">
+</form>
+
